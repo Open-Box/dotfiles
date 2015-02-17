@@ -1,11 +1,20 @@
 # Open-Box's dotfiles
 ----
 
-An ongoing project about linux (and maybe mac) dotfiles systems.
+An ongoing project about linux (and maybe osx) dotfiles systems.
 
 ### Install
 
 *** ToDo
+
+```bash
+$ cd ~
+$ sudo apt-get install git
+$ git clone https://github.com/Open-Box/dotfiles
+$ cd ~/dotfiles/bin
+$ sh ./bootstrap.sh
+```
+
 
 ### Uninstall
 
