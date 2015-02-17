@@ -1,0 +1,561 @@
+git status
+cd ..
+nano git_flow_example
+cd rapportini
+_cmd/installToStudio.sh 
+_cmd/installToDemo.sh 
+_cmd/installToStudio.sh 
+git commit -a
+_cmd/installToStudio.sh 
+_cmd/installToDemo.sh 
+git commit -a
+tail app/logs/dev.log 
+tail app/logs/dev.log  -f
+git status
+git add .
+git commit -a
+git push groucho devel 
+git status
+git commit -a
+git push groucho devel 
+git status
+git commit -a
+git checkout master
+git push groucho master 
+git checkout devel 
+cd ..
+ll
+ls -a
+cd nordental/sylius/
+git status
+git commit -a
+git brach -a
+git branch -a
+git push groucho bado-working 
+cd ..
+ls
+cd registro_attivita/rapportini
+git status
+git diff
+git commit -a
+git flow release publish 
+git flow release publish groucho
+git flow release finisch
+git flow release finish
+git status
+git push groucho develop 
+git checkout master 
+git push groucho master 
+git checkout develop 
+mysql -user=root mysql
+ssh kgroup@app.studiosvp.it
+sudo apt-get update
+ssh kgroup@app.studiosvp.it
+ping app.studiosvp.it
+ssh kgroup@app.studiosvp.it
+cd Lavori/OB_Works/registro_attivita/rapportini
+git
+git status
+ssh kgroup@app.studiosvp.it
+sudo su
+ssh kgroup@app.studiosvp.it
+ssh bado@ob-vpn-ubuwp01 
+ssh root@ob-vpn-ubuweb01 
+sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo apt-get update
+sudo rm /var/lib/apt/lists/*
+sudo rm /var/lib/apt/lists/partial/*
+sudo apt-get update
+sudo apt-get install krita
+sudo apt-get install kritasketch 
+kbuildsycoca4
+cd Lavori/OB_Works/anagrafiche-sicet/Symfony/
+git
+git status
+_cmd/installToProd.sh 
+cd Lavori/OB_Works/osteria-borro/Symfony/
+ls
+sudo su
+ls
+cat composer.json 
+git status
+git commit -a
+git branch 
+git checkout bado-working 
+git merge master
+git status
+cat composer.json 
+sudo composer.phar self-update
+sudo composer.phar update
+app/console 
+_cmd/clearCache.sh 
+_cmd/fixPermDev.sh 
+_cmd/clearCache.sh 
+_cmd/fixPermDev.sh 
+ll app/cache/
+_cmd/clearCache.sh 
+sudo composer.phar update
+sudo chown andy:andy -r ./*
+sudo chown andy:andy -R ./*
+_cmd/fixPermDev.sh 
+composer.phar update
+_cmd/assetSymLink.sh 
+ll app/cache/
+_cmd/fixPermDev.sh 
+app/console  container:debug
+_cmd/fixPermDev.sh 
+app/console  container:debug
+app/console  container:debug | grep ob_
+_cmd/installProdNew.sh 
+git flow hotfix finish 
+git status
+git add .
+git status
+git commit -a
+git checkout master 
+git merge bado-working 
+git push origin master 
+ssh root@ob-vpn-ubuweb01 
+cd Lavori/OB_Works/registro_attivita/rapportini
+ls
+git status
+git flow hotfix start
+git tags
+git tag
+git flow hotfix start 1.1 
+scp kgroup@app.studiosvp.it:/home/kgroup/backups/mysql/01/rapportini_prod.sql.tar.gz
+scp kgroup@app.studiosvp.it:/home/kgroup/backups/mysql/01/rapportini_prod.sql.tar.gz ../
+cd ..
+tar xvf rapportini_prod.sql.tar.gz 
+mysql -urapportini_dev -prapportini_dev rapportini_dev < rapportini_prod.sql
+cd rapportini
+git status
+git commit -a
+git commit --amend
+_cmd/installToDemo.sh 
+git commit -a
+ssh root@ob-vpn-ubudemo01 
+git status
+cd ../../doppler/sylius/
+ls
+git status
+git commit -a
+_cmd/copyProdDb.sh 
+ll
+rm doppler_sirio.sql 
+_cmd/copyProdDb.sh 
+ll
+ll ../remote-db/
+cd ..
+cd remote-db/
+ls
+ll
+rm mysql 
+mysql -udoppler_sylius -pdoppler_sylius
+mysql -udoppler_sylius -pdoppler_sylius doppler_sylius < doppler_sirio.sql
+cd ../
+app/console route:debug | grep doppler_product_view
+cd sylius/
+app/console route:debug | grep doppler_product_view
+app/console route:debug | grep doppler_cart_item_remove
+app/console nordental:create:category_tree  --em_source=sirio_db --em_dest=default 
+_cmd/installToProd.sh 
+git status
+git commit -a
+git checkout master 
+git merge bado-working 
+git checkout bado-working 
+ssh root@ob-vpn-ubuecomm01 
+ssh kgroup@app.studiosvp.it
+sudo a2dissite rapportini-s2.site.conf 
+sudo service apache2 reload 
+git status
+git commit
+git status
+sudo apache2ctl -S
+a2ensite rapportini-s2.site.conf 
+sudo a2ensite rapportini-s2.site.conf 
+sudo service apache2 reload 
+cd ../../nordental/sylius/
+app/console nordental:create:category_tree  
+app/console help nordental:create:category_tree  
+cd ../../
+cd registro_attivita/rapportini
+app/console container:debug | grep phpexcel
+ll
+bin/console container:debug | grep phpexcel
+composer.phar update
+ll
+_cmd/fixPermDev.sh 
+composer.phar update
+ll vendor/
+ll
+mv vendor{,.old}
+composer.phar update
+composer.phar install
+bin/console container:debug | grep phpexcel
+sudo apt-get install soundkonverter 
+sudo apt-get autoremove 
+ssh root@ob-vpn-uburedir01 
+ssh root@ob-vpn-ubudemo01 
+cd Lavori/OB_Works/registro_attivita/rapportini
+ls
+ll
+bin/console container:debug
+bin/console container:debug | grep excel
+git status
+rm -rf vendor.old
+ll
+git add .
+gi commit -a
+git commit -a
+git status
+git commit -a
+git flow hotfix init
+git flow hotfix start
+git flow hotfix start bug-fix-rapportini-passati
+git flow hotfix finish
+git flow feature start
+git flow feature start file-excel-generator
+git status
+git branch
+git flow hotfix start bug-fix-rapportini-passati
+_cmd/installToDemo.sh 
+git status
+git commit -a
+git checkout feature/file-excel-generator 
+sudo nano /etc/hosts
+ssh bado@ob-vpn-ubuwp01 
+ssh kgroup@app.studiosvp.it
+ssh root@ob-vpn-uburedir01 
+ssh root@ob-vpn-ubudemo01 
+git status
+git commit -a
+git flow feature finish 
+git release start
+git flow release start
+git flow release start v1.1
+git merge hotfix/bug-fix-rapportini-passati 
+_cmd/installToDemo.sh 
+_cmd/installToStudio.sh 
+git flow release finish 
+git status
+git branch 
+git push groucho master 
+git checkout master 
+git push groucho master 
+git checkout develop 
+git push groucho develop 
+git status
+git branch 
+ssh root@ob-vpn-ubuecomm01 
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo su
+sudo apt-get update
+sudo apt-get install ansible
+ssh bado@ob-vpn-ubuwp01 
+ping app.studiosvp.it
+mysql -h188.219.174.188 -uboard -p0range!
+ssh kgroup@app.studiosvp.it
+ping app.studiosvp.it
+telnet 188.219.174.188 3306
+telnet 188.219.174.188 22
+ll
+sudo service ssh stop
+cat /etc/ssh/sshd_config 
+sudo apt-get install bum
+sudo bum
+cat /etc/apache2/sites-available/gasoline-s2.site.conf 
+cd Lavori/OB_Works/gas-on-line/gasoline
+bin/console doctrine:database:drop
+bin/console doctrine:database:drop --force
+bin/console doctrine:database:create
+rm -rf .git
+git init
+ll
+cd ../gasoline-s2.5/
+git status
+git remote 
+git remote -v
+cd ..
+cd gasoline
+git status
+git add .
+gulp
+git status
+git commit -a
+git flow init
+git status
+cat /etc/apache2/sites-available/gasoline-s2.site.conf 
+_cmd/fixPermDev.sh 
+bin/console doctrine:schema:update
+bin/console doctrine:generate:entities
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update
+bin/console doctrine:schema:update --force
+git status
+git add .
+git status
+git commit -a
+ifconfig 
+sudo apt-get install openssh-server 
+sudo service ssh status
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+git status
+git add .
+git commit -a
+git status
+cd ../../nordental/sylius/
+ls
+git status
+app/console route:debug | grep sylius_homepage
+cat /etc/apache2/sites-available/nordental-sylius.site.conf 
+sudo nano  /etc/apache2/sites-available/nordental-sylius.site.conf 
+ll /home/andy/Lavori/OB_Works/nordental/sylius/template_flatpoint
+sudo nano  /etc/apache2/sites-available/nordental-sylius.site.conf 
+fdisk -l
+sudo fdisk -
+sudo fdisk -l
+lsusb 
+ssh bado@ob-vpn-ubuwp01 
+ssh root@ob-vpn-uburedir01 
+ssh root@ob-vpn-ubuweb01 
+date
+date | md5
+date > md5
+date | md5sum
+cd Lavori/OB_Works/openbox/project-manager-s2.6/
+ll
+cat _cmd/installToProd.sh 
+_cmd/installToProd.sh 
+git remote -v
+ll /etc/apache2/sites-available/
+bin/console 
+bin/console ob:h bl4mingPisapia
+sudo nano /etc/hosts
+ping sambapresents.org
+_cmd/installToProd.sh 
+bin/console doctrine:schema:update
+git status
+cd web/
+pwd
+cd ..
+sudo su
+git status
+git init
+nano .git/description 
+cd ..
+git clone project-manager-s2.6
+git clone project-manager-s2.6 project-manager-s2.6.git
+nano project-manager-s2.6.git/.git/description 
+nano project-manager-s2.6/.git/description 
+nano project-manager-s2.6.git/.git/description 
+scp -r project-manager-s2.6.git root@groucho:/home/git
+ssh root@groucho
+rm -rf project-manager-s2.6.git
+cd project-manager-s2.6/
+git remote add groucho root@groucho:/home/git/project-manager-s2.6.git
+git remote -v
+git fetch groucho 
+git status
+git add .
+git commit -a
+git flow init 
+git status
+git tags
+git tag
+sudo nano /etc/hosts
+ssh bado@ob-vpn-ubuwp01 
+_cmd/fixPermDev.sh 
+bin/console doctrine:schema:update
+bin/console doctrine:schema:update --force
+bin/console doctrine:database:drop --force
+bin/console doctrine:database:drop --create
+bin/console doctrine:database:create
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:generate:entities AppBundle:CodeCostCenter
+bin/console doctrine:generate:entities AppBundle
+sudo su
+cd Lavori/OB_Works/open-box.it/project-manager-s2.6/
+bin/console fos:user:add
+bin/console fos:user:create ob-super
+bin/console doctrine:schema:update --force
+bin/console fos:user:create ob-super
+bin/console fos:user:promote ob-super
+bin/console fos:user:create pmAdmin
+bin/console fos:user:promote pmAdmin
+bin/console fos:user:revoke pmAdmin
+bin/console fos:user:demote pmAdmin
+bin/console fos:user:promote pmAdmin
+_cmd/assetSymLink.sh 
+_cmd/clearCache.sh 
+bin/console doctrine:schema:update --force
+ll var/cache/
+rm -rf var/cache/dev/*
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+git commit -a
+git add .
+git commit -a
+git push groucho master 
+git remote -v
+git push groucho develop 
+git checkout master 
+git push groucho master 
+git pull groucho master
+git fetch groucho 
+git push groucho master 
+git checkout develop 
+bin/console doctrine:schema:update --force
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+git commit -a
+_cmd/installToProd.sh 
+git status
+git flow release start
+git flow release start v0.1
+git push groucho
+git push groucho develop 
+git checkout master 
+git push groucho master 
+git pull groucho master
+git push groucho master
+git fetch groucho 
+git branches -a
+git branch -a
+ssh root@groucho 
+bin/console doctrine:generate:entities AppBundle
+bin/console doctrine:schema:update --force
+gulp
+bower install eonasdan-bootstrap-datetimepicker#latest --save
+gulp
+ll web/assets/vendor/
+ll web/assets/vendor/bootstrap-datepicker/
+gulp
+ll web/assets/vendor/bootstrap-datepicker/
+gulp
+bower search moment
+bower install momentjs --save
+gulp
+ll web/assets/vendor/moment/moment-with-locales.min.js 
+gulp
+bin/console doctrine:generate:entities AppBundle
+bower install momentjs --save
+bin/console doctrine:schema:update --force
+bin/console route:debug
+bin/console route:debug | grep main_1_contract_human_resource_index
+bin/console route:debug | grep main_1_contract_human_resource
+bin/console route:debug | grep main_1_contract_
+_cmd/installToProd.sh 
+gulp
+_cmd/installToProd.sh 
+git flow release start v0.2
+git commit -a
+git flow release start v0.2
+git flow release finish 
+git tags
+git tag
+git push groucho 
+git push groucho develop 
+git status
+git add .
+git commit -a
+git hotfix start
+git flow hotfix start
+git flow hotfix start file-mancanti 
+git push groucho develop 
+cat /etc/apache2/sites-available/pm-s2.site.conf 
+ssh root@ob-vpn-ubuweb01 
+git status
+git push groucho master 
+ssh root@ob-vpn-ubuweb01 
+ssh bado@ob-vpn-ubuwp01 
+cd ../..
+cd symfony2/
+ls
+git clone git@gigit clone git@github.com:/Open-Box/symfony.git
+git clone git@github.com:/Open-Box/symfony.git
+ll
+cd symfony
+ls
+git branch
+git fetch origin 
+git branch
+git remote -v
+git remote add upstream git://github.com/Symfony/symfony.git
+git remote -v
+git fetch upstream 
+git tag
+git tag -a
+git tag -v
+git branch 
+sudo shutdown
+sudo shutdown now!
+sudo shutdown now
+cd Lavori/OB_Works/nordental/sylius/
+app/console cache:clear
+ll app/cache/*
+ll app/cache/
+_cmd/fixPermDev.sh 
+_cmd/clearCache.sh 
+_cmd/fixPermDev.sh 
+ll app/cache/
+mkdir app/cache/dev
+_cmd/fixPermDev.sh 
+sudo service apache2 restart
+cd Lavori/OB_Works/nordental/sylius/
+git status
+git commit -a
+git flow release start 0.7
+_cmd/installToDemo.sh 
+ssh root@ob-vpn-ubuweb01 
+ssh root@ob-vpn-ubuecomm01 
+ssh root@groucho 
+ll /opt/
+cd ~
+ls
+cd dotfiles/
+ll
+ls -a
+ls
+cat git-flow-completion.bash 
+cp git-flow-completion.bash ../
+git init
+git remote add origin https://github.com/Open-Box/dotfiles.git
+git fetch origin 
+git status
+git add git-flow-completion.bash 
+git commit -a
+touch .gitignore
+git add .gitignore 
+git commit -a
+git push origin master 
+git pull origin 
+git pull origin  master 
+git push origin master 
+curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | bash
+cd ..
+rm -rf .oh-my-zsh/
+curl -L http://install.ohmyz.sh | bash
+rm -rf .oh-my-zsh/
+curl -L http://install.ohmyz.sh | bash
+which zsh
+chsh -s /bin/zsh
+man chsh 
+ll /bin/sh
+grep and /etc/passwd
+ps -p $$
+ps -p $$
+sudo npm install -g cordova ionic
+sudo npm update
+<ls -l /bin/sh
+ls -l /bin/sh
+ls -l /bin/
+sudo apt-get install zsh
