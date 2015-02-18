@@ -1,0 +1,13 @@
+
+#PLAY_HOME=/opt/play/
+#PATH=$PATH:$PLAY_HOME
+ANDROID_PATHS=/opt/android-sdk-linux/tools/:/opt/android-sdk-linux/platform-tools
+PATH=$PATH:$ANDROID_PATHS
+SCRIPT_PATHS=/home/bash_script_test/scripts/:/home/bash_script_test/scripts/wordpress
+PATH=$PATH:$SCRIPT_PATHS
+COMPOSER_PATHS=$HOME/.composer/vendor/bin
+PATH=$PATH:$COMPOSER_PATHS
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

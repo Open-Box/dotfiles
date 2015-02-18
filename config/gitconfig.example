@@ -1,0 +1,82 @@
+[user]
+	name = AUTHORNAME
+	email = AUTHOREMAIL
+[credential]
+        helper = cache --timeout=3600 ### timeout 1h in seconds
+[core]
+	excludesfile = /home/USERNAME/.gitignore_global
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol	
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse	
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+	
+[alias]
+	#st = status
+	#ci = commit
+	#br = branch
+	#co = checkout
+	#df = diff
+	#dc = diff --cached
+	#lg = log -p
+	#lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	#lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	#ls = ls-files
+
+	# Show files ignored by git:
+	#ign = ls-files -o -i --exclude-standard
+	
+
+
+# Sample gitconfig
+#
+#
+#[hub]
+#        protocol = https
+#[user]
+#        name = AUTHORNAME
+#        email = AUTHOREMAIL
+#[credential]
+#        helper = GIT_CREDENTIAL_HELPER
+#[alias]
+#        co = checkout
+#        promote = !$ZSH/bin/git-promote
+#        wtf     = !$ZSH/bin/git-wtf
+#        rank-contributors = !$ZSH/bin/git-rank-contributors
+#        count   = !git shortlog -sn
+#[color]
+#        diff = auto
+#        status = auto
+#        branch = auto
+#        ui = true
+#[core]
+#        excludesfile = ~/.gitignore
+#        editor = vim
+#[apply]
+#        whitespace = nowarn
+#[mergetool]
+#        keepBackup = false
+#[difftool]
+#        prompt = false
+#[help]
+#        autocorrect = 1
+#[push]
+#        # See `git help config` (search for push.default)
+#        # for more information on different options of the below setting.
+#        #
+#        # Setting to git 2.0 default to surpress warning message
+#        default = simple
+
+
