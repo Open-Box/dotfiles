@@ -44,3 +44,10 @@ do
     source $src
 done
 
+# executing:
+for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.exec')
+do
+    echo $src
+#    bash $src
+done
+

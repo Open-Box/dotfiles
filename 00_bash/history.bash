@@ -2,7 +2,7 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
-HISTFILE=~/.history/history.$HOSTNAME
+#HISTFILE=~/.history/history.$HOSTNAME
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000

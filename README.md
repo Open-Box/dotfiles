@@ -19,8 +19,8 @@ The bostrap script takes care of init git, backup files and organize all the dot
 
 ### File Organitation 
 
-The right directory structure isn't define yet
----
+#### The right directory structure isn't define yet
+
 
 According to `@holman` project (see reference for details), dotfiles logic is divided around topic. 
 The only exception is the `bin` directory containg executable script files.

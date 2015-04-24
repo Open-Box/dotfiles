@@ -138,4 +138,3 @@ function __gulp_completion() {
 
 }
 complete -o default -o nospace -F __gulp_completion gulp
-
