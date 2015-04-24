@@ -36,7 +36,7 @@ cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd)
 
 # importing function file
-functions_file="$DOTFILES_ROOT/bash/functions.bash"
+functions_file="$DOTFILES_ROOT/00_bash/functions.bash"
 if [ -f $functions_file ]
 then
     source $functions_file
