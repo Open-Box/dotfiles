@@ -1,5 +1,7 @@
 !/bin/**
 
 /backups/*
+/extra/*
 
 !.gitkeep
+

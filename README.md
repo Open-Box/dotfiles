@@ -10,7 +10,7 @@ An ongoing project about linux (and maybe osx) dotfiles systems.
 ```bash
 $ cd ~
 $ sudo apt-get install git
-$ git clone https://github.com/Open-Box/dotfiles
+$ git clone --recursive https://github.com/Open-Box/dotfiles
 $ cd ~/dotfiles/bin
 $ sh ./bootstrap.sh
 ```
