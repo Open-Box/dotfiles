@@ -1,3 +1,13 @@
+### Gulp
+.gulp_tasks~
+
+### Bower
+/bower_components/*
+
+### nodejs modules
+/node_modules/*
+
+
 # Compiled source #
 ###################
 *.com
