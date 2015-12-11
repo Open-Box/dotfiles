@@ -7,6 +7,13 @@
 ### nodejs modules
 /node_modules/*
 
+### Symfony
+bootstrap.php.cache
+app/cache/*
+app/logs/*
+var/cache/*
+var/logs/*
+
 
 # Compiled source #
 ###################
