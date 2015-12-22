@@ -7,3 +7,4 @@ alias sfprod='bin/console --env=prod'
 alias sf2help='app/console help'
 alias sfhelp='bin/console help'
 
+alias sf-cs-fixer='php-cs-fixer fix ./src/  --level=symfony'

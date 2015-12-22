@@ -25,6 +25,8 @@ function src_file() {
 
 ##### funzioni:
 
+# external ip detection
+function ext-ip () { curl http://ipecho.net/plain; echo; }
 
 
 
