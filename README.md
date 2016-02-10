@@ -11,17 +11,17 @@ An ongoing project about linux (and maybe osx) dotfiles systems.
 $ cd ~
 $ sudo apt-get install git
 $ git clone --recursive https://github.com/Open-Box/dotfiles
-$ cd ~/dotfiles/bin
-$ sh ./bootstrap.sh
+$ cd ~/dotfiles
+$ ./bin/bootstrap.sh
 ```
 
 The bostrap script takes care of init git, backup files and organize all the dotfiles logic.
 
-### File Organitation 
+### File Organitation
 
 #### The right directory structure isn't defined yet
 
-According to `@holman` project (see reference for details), dotfiles logic is divided around topic. 
+According to `@holman` project (see reference for details), dotfiles logic is divided around topic.
 The only exception is the `bin` directory containg executable script files.
 
 Inside every directory you can find a special file hierarchy:
@@ -37,9 +37,9 @@ Inside every directory you can find a special file hierarchy:
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `bin/bootstrap`.
-  
-- **config/gitconfig.example**: template file without credentials info used to 
-  generate a copy in your  `$HOME`. 
+
+- **config/gitconfig.example**: template file without credentials info used to
+  generate a copy in your  `$HOME`.
 
 - **config/**: not used yet in auto mode
 - **general/**: not used yet
@@ -79,4 +79,3 @@ This project is based on ideas found (in a random order) at the following links:
 
 Suggestions/improvements
 [welcome](https://github.com/Open-Box/dotfiles/issues)!
-
