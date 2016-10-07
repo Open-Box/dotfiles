@@ -130,3 +130,27 @@ function extract {
     fi
 fi
 }
+
+
+### measure how long does it take to load an url
+
+function perf1 {
+  curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+# curl -o /dev/null -s -w "time_total: %{time_total} sec\nsize_download: %{size_download} bytes\n" "$1"
+}
+
+
+function perf2 {
+  curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+# curl -o /dev/null -s -w "time_total: %{time_total} sec\nsize_download: %{size_download} bytes\n" "$1"
+}
+
+### dump MYSQL privileges for all users apart from root, phpmyadmin and debian-sys-maint. 
+mygrants()
+{
+mysql -B -N $@ -e "SELECT DISTINCT CONCAT(
+'SHOW GRANTS FOR ''', user, '''@''', host, ''';'
+) AS query FROM mysql.user WHERE user NOT IN ('root','phpmyadmin','debian-sys-maint')"  | \
+mysql $@ | \
+sed 's/\(GRANT .*\)/\1;/;s/^\(Grants for .*\)/## \1 ##/;/##/{x;p;x;}'
+}
